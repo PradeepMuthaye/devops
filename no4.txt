@@ -1,0 +1,10 @@
+sudo su
+password : Student
+dnf install docker
+systemctl start docker
+docker pull 6921/flaskimg:webApp
+docker images #to check locally downloaded imahges
+docker run -d -p 8089:90 [Image id]
+docker ps
+docker inspect [container ID]
+docker stop [container ID]
